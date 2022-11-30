@@ -1,14 +1,12 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  media_folder: "public/images"
-  public_folder: "/images"
-  site_url: https://cars.amurin.com
-  display_url: https://cars.amurin.com
-  logo_url: https://cars.amurin.com/images/logo.jpg
-  search: false
-media_folder: public/img
-public_folder: img
+media_folder: "public/images"
+public_folder: "images"
+site_url: https://cars.amurin.com
+display_url: https://cars.amurin.com
+logo_url: https://cars.amurin.com/images/logo.jpg
+search: false
 collections:
   - label: "Cars"
     name: "cars"
