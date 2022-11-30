@@ -1,4 +1,0 @@
----
-title: Opel Astra
-year: 1999
----

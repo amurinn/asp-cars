@@ -1,28 +1,29 @@
-import Head from "next/head"
-import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
+import Script from "next/script";
 
-export default class Home extends Component {
-  render() {
-    let { title, cats } = attributes;
-    return (
-      <>
-        <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
-        </Head>
-        <article>
-          <h1>{title}</h1>
-          <HomeContent />
-          <ul>
-            {cats.map((cat, k) => (
-              <li key={k}>
-                <h2>{cat.name}</h2>
-                <p>{cat.description}</p>
-              </li>
-            ))}
-          </ul>
-        </article>
-      </>
-    )
-  }
-}
+const Home = () => {
+
+  const importAll = (r) => r.keys().map(r);
+
+  const cars = importAll(
+    require.context("../content/cars/", false, /\.json$/)
+  );
+
+  console.log(cars);
+
+  return (
+    <>
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+      <h1>ASP Cars</h1>
+      <ul>
+        {cars.map((car, index) => (
+          <li key={index}>
+            <p>Model: {car.title} </p>
+            <p>Year: {car.year} </p>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default Home;
