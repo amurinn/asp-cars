@@ -6,7 +6,7 @@ public_folder: img
 collections:
   - label: "Cars"
     name: "cars"
-    folder: "cars"
+    folder: "content/cars"
     create: true
     fields:
       - {label: "Model", name: "title", widget: "string"}
