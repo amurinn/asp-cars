@@ -8,6 +8,7 @@ collections:
     name: "cars"
     folder: "content/cars"
     create: true
+    extension: json
     fields:
       - {label: "Model", name: "title", widget: "string"}
       - { label: "Year", name: "year", widget: "number"}
