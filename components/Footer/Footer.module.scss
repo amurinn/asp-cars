@@ -1,0 +1,77 @@
+.container{
+    width: 100%;
+    background-color: $color-dark-100;
+    color: $color-text-primary;
+}
+
+.wrapper{
+    max-width: 1222px;
+    margin: 0 30px;
+    padding: 50px 0;
+
+    @include md{
+        width: 100%;
+        margin: auto;
+        padding: 50px 30px;
+    }
+
+    @include lg{
+        padding: 130px 30px;
+    }
+
+    h3{
+        padding-top: 30px;
+        color: $color-text-primary;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+.top{
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 2px solid $color-red-primary;
+}
+
+.contact{
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    span{
+        color: $color-red-primary;
+    }
+}
+
+.address{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .socials{
+        padding-top: 30px;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.bottom{
+    @include md{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.icons{
+    @include md{
+        gap: 80px;
+    }
+}

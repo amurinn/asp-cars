@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  swcMinify: true,
+  trailingSlash: true,
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
+  sassOptions: {
+    includePaths: ['./components/*'],
+    prependData: `@import "./styles/variables.scss";`
+  }
 };
 
 module.exports = {
@@ -13,3 +24,5 @@ module.exports = {
     return cfg;
   },
 };
+
+module.exports = nextConfig

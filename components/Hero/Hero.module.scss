@@ -1,0 +1,177 @@
+.container {
+    width: 100%;
+    position: relative;
+
+    @include md{
+        background-color: $color-dark-200;
+    }
+}
+
+.wrapper{
+
+    max-width: 1222px;
+    margin: 0 30px;
+
+    @include md{
+        display: flex;
+        justify-content: flex-end;
+        height: 450px;
+    }
+
+    @include lg{
+        margin: auto;
+        height: 750px;
+    }
+
+}
+
+.imageMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include md{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        max-width: 778px;
+        object-fit: cover;
+        height: 350px;
+    }
+}
+
+.row{
+    position: absolute;
+    
+    width: 90%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    max-width: 778px;
+    
+    @include md{
+        width: 100%;
+        position: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include lg{
+        max-width: 100%;
+        margin: auto 30px;
+    }
+
+    @include xl{
+        margin: auto 0;
+    }
+}
+
+.box{
+
+    @include md{
+        max-width: 200px;
+    }
+
+    .boxWrapper{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px 0;
+        text-align: center;
+        background: rgba(34, 34, 34, 0.8);
+        border-radius: 10px;
+        color: $color-text-primary;
+
+        @include md{
+            width: 300px;
+            z-index: 10;
+            position: relative;
+            max-width: 537px;
+
+            text-align: left;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+
+        @include lg{
+            width: 537px;
+            height: 352px;
+            padding-left: 50px;
+        }
+    }
+}
+
+.title{
+    font-weight: 700;
+    font-size: 35px;
+
+    @include md{
+        font-size: 40px;
+    }
+
+    @include lg{
+        font-size: 60px;
+    }
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-text-secondary;
+
+    @include lg{
+        font-size: 20px;
+    }
+    
+}
+
+.button{
+    button{
+        border: 0;
+        background: $color-red-primary;
+        color: $color-text-primary;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        width: 162px;
+        height: 43px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-dark-400;
+            color: $color-red-primary;
+        }
+    }
+}
+
+.image{
+    display: none;
+
+    @include md{
+        display: block;
+    }
+
+    img{
+        width: 550px;
+        height: auto;
+        border-radius: 10px;
+
+        @include lg{
+            width: 778px;
+        }
+    }
+}
+
+.column{
+    margin-left: auto;
+}

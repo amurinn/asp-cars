@@ -1,0 +1,22 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--montserrat);
+  overflow-x: hidden;
+}
+
+button{
+    font-family: var(--montserrat) !important;
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
