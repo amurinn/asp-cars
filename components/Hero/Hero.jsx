@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className={style.container}>
       <div className={style.imageMobile}>
-        <Image src={heroImage} alt="hero" />
+        <Image src={heroImage} alt="hero" priority />
       </div>
       <div className={style.wrapper}>
         <div className={style.row}>
