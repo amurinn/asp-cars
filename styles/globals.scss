@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--montserrat);
-  overflow-x: hidden;
+  font-family: Montserrat;
 }
 
 button{
-    font-family: var(--montserrat) !important;
+    font-family: Montserrat !important;
     border: 0;
     transition: all 0.2s ease;
 }
