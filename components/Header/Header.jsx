@@ -4,12 +4,13 @@ import Image from "next/image"
 import classNames from 'classnames';
 import { RxHamburgerMenu } from "react-icons/rx"
 import logo from "../../public/images/logo.svg"
+import Link from 'next/link'
 
-function Header() {
+function Header(props) {
 
   const [menuToggle, setMenuToggle] = useState(false)
 
-  console.log(menuToggle)
+  console.log(props.page)
 
   return (
     <div className={style.container}>
@@ -24,17 +25,29 @@ function Header() {
         </div>
         <div className={style.menu}>
           <ul>
-            <a className={style.active} href="#"><li>O NÁS</li></a>
-            <a href="#"><li>NAŠE AUTA</li></a>
-            <a href="#"><li>KONTAKT</li></a>
+            <Link href="/" className={classNames(props.page=='home' && style.active)}>
+                <li>O NÁS</li>
+            </Link>
+            <Link href="/auta" className={classNames(props.page=='cars' && style.active)}>
+                <li>NAŠE AUTA</li>
+            </Link>
+            <Link href="/kontakt" className={classNames(props.page=='contact' && style.active)}>
+                <li>KONTAKT</li>
+            </Link>
           </ul>
         </div>
       </div>
       <div className={classNames(style.mobileMenu, menuToggle && style.open)}>
         <ul>
-          <a className={style.active} href="#"><li>O NÁS</li></a>
-          <a href="#"><li>NAŠE AUTA</li></a>
-          <a href="#"><li>KONTAKT</li></a>
+            <Link href="/" className={classNames(props.page=='home' && style.active)}>
+                <li>O NÁS</li>
+            </Link>
+            <Link href="/auta" className={classNames(props.page=='cars' && style.active)}>
+                <li>NAŠE AUTA</li>
+            </Link>
+            <Link href="/kontakt" className={classNames(props.page=='contact' && style.active)}>
+                <li>KONTAKT</li>
+            </Link>
         </ul>
       </div>
     </div>

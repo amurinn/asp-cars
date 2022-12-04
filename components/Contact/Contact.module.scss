@@ -1,0 +1,67 @@
+.container{
+    width: 100%;
+    background-color: $color-dark-100;
+    color: $color-text-primary;
+}
+
+.wrapper{
+    max-width: 1222px;
+    margin: 0 30px;
+    padding: 50px 0;
+
+    @include md{
+        width: 100%;
+        margin: auto;
+        padding: 50px 30px;
+    }
+
+    @include lg{
+        padding: 130px 30px;
+    }
+
+    h2{
+        font-weight: 700;
+        font-size: 27px;
+        padding-bottom: 30px;
+    }
+
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include md{
+        flex-direction: row;
+    }
+}
+
+.col{
+    flex: 1;
+
+    iframe{
+        filter: invert(90%)
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span{
+        padding-left: 52px;
+    }
+}
+
+.phone, .mail, .maps {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.map {
+    flex: 2;
+    max-width: 681px;
+}

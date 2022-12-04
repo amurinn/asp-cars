@@ -5,7 +5,7 @@ media_folder: "public/images"
 public_folder: "images"
 site_url: https://cars.amurin.com
 display_url: https://cars.amurin.com
-logo_url: https://cars.amurin.com/images/logo.jpg
+logo_url: https://cars.amurin.com/images/logo.svg
 search: false
 collections:
   - label: "Cars"

@@ -13,13 +13,10 @@ const Home = () => {
   const cars = importAll(
     require.context("../content/cars/", false, /\.json$/)
   )
-
-  console.log(cars)
-
+  
   return (
     <>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-      <Header />
+      <Header page="home" />
       <Hero />
       <Cars />
       <Services />
