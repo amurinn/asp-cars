@@ -7,7 +7,7 @@ import instagram from "../../public/images/instagram.svg";
 import phone from "../../public/images/phone.svg";
 import mail from "../../public/images/mail.svg";
 import maps from "../../public/images/maps.svg";
-import classNames from "classnames";\
+import classNames from "classnames";
 import Link from "next/link";
 
 function Footer(props) {
@@ -52,7 +52,7 @@ function Footer(props) {
               <a href="mailto:asppujcovna@gmail.com">
                 <Image src={mail} alt="mail" />
               </a>
-              <Link href="/kontakt">
+              <Link href={"/kontakt"}>
                 <Image src={maps} alt="maps" />
               </Link>
             </div>
