@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>ASP Auto Půjčovna</title>
         <meta name="title" content="ASP Auto Půjčovna" />
-        <meta name="description" content="Půjč si auto!V Praze, Mělníku a okolí." />
+        <meta name="description" content="Půjč si auto! V Praze, Mělníku a okolí." />
         <meta name="keywords" content="Auto pujcovna praha,Auto praha,Car sharing praha,Auto melnik" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

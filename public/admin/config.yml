@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: git-gateway #test-repo
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "images"
@@ -15,3 +15,44 @@ collections:
     fields:
       - {label: "Model", name: "title", widget: "string"}
       - { label: "Year", name: "year", widget: "number"}
+  - label: "Settings"
+    name: "settings"
+    files:
+    - label: "SEO"
+      name: "seo"
+      file: "content/settings.json"
+      extension: "json"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Description", name: "description", widget: "string"}
+        - {label: "Keywords (Separated by comma)", name: "keywords", widget: "string"}
+    - label: "Contact"
+      name: "contact"
+      file: "content/contact.json"
+      extension: "json"
+      fields:
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Phone Number (+420)", name: "phone", widget: "string"}
+        - {label: "Email", name: "email", widget: "string"}
+        - {label: "Address line 1", name: "addres-1", widget: "string"}
+        - {label: "Address line 2", name: "addres-2", widget: "string"}
+        - {label: "IČO", name: "ico", widget: "string"}
+        - {label: "Facebook URL", name: "facebook", widget: "string"}
+        - {label: "Instagram URL", name: "instagram", widget: "string"}
+  - label: "Pages"
+    name: "pages"
+    files:
+    - label: "Homepage"
+      name: "homepage"
+      file: "content/pages/homepage.json"
+      extension: "json"
+      fields:
+        - label: "Hero Section"
+          name: "hero"
+          widget: "list"
+          collapsed: false
+          allow_add: false
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Subtitle", name: "subtitle", widget: "string"}
+            - {label: "Button", name: "button", widget: "string"}

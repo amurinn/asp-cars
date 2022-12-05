@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import style from "./Header.module.scss"
 import Image from "next/image"
 import classNames from 'classnames';
-import { RxHamburgerMenu } from "react-icons/rx"
 import logo from "../../public/images/logo.svg"
 import Link from 'next/link'
 
